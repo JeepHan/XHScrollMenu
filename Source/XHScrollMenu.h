@@ -49,6 +49,8 @@
 // 当menu数较少时，是否均匀摆放button使之占满整个宽度。默认是no;
 @property (nonatomic, assign) BOOL shouldUniformizeMenus;
 
+@property (nonatomic, strong) UIButton *managerMenusButton;
+
 
 - (void)setSelectedIndex:(NSUInteger)selectedIndex animated:(BOOL)aniamted calledDelegate:(BOOL)calledDelgate;
 

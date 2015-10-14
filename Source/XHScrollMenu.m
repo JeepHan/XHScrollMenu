@@ -19,8 +19,6 @@
 @property (nonatomic, strong) UIImageView *leftShadowView;
 @property (nonatomic, strong) UIImageView *rightShadowView;
 
-@property (nonatomic, strong) UIButton *managerMenusButton;
-
 @property (nonatomic, strong) NSMutableArray *menuButtons;
 
 @end
@@ -98,7 +96,7 @@
         _managerMenusButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) - height, 0, height, height)];
         _managerMenusButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
         _managerMenusButton.backgroundColor = self.backgroundColor;
-        [_managerMenusButton setImage:[UIImage imageNamed:@"managerMenuButton"] forState:UIControlStateNormal];
+        [_managerMenusButton setImage:[UIImage imageNamed:@"managerMenuButton_unSelected@2x"] forState:UIControlStateNormal];
         [_managerMenusButton addTarget:self action:@selector(managerMenusButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.managerMenusButton];
     }

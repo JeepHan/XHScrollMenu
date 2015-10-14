@@ -59,10 +59,12 @@
     [self.view addSubview:self.segmentedControl];
     
     _scrollMenu = [[XHScrollMenu alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_segmentedControl.frame), CGRectGetWidth(self.view.bounds), 36)];
-    _scrollMenu.backgroundColor = [UIColor colorWithWhite:0.902 alpha:1.000];
+    _scrollMenu.backgroundColor = [UIColor yellowColor];
+//    _scrollMenu.backgroundColor = [UIColor colorWithWhite:0.902 alpha:1.000];
     _scrollMenu.indicatorTintColor = [UIColor greenColor];
     _scrollMenu.hasShadowForBoth = NO;
     _scrollMenu.shouldUniformizeMenus = YES;
+    _scrollMenu.hasManagerButton = YES;
     _scrollMenu.delegate = self;
     //    _scrollMenu.selectedIndex = 3;
     [self.view addSubview:self.scrollMenu];
@@ -162,6 +164,13 @@
 
 - (void)scrollMenuDidManagerSelected:(XHScrollMenu *)scrollMenu {
     NSLog(@"scrollMenuDidManagerSelected");
+    if (scrollMenu.managerMenusButton.selected) {
+        [scrollMenu.managerMenusButton setImage:[UIImage imageNamed:@"managerMenuButtonImg"] forState:UIControlStateNormal];
+        scrollMenu.managerMenusButton.selected = NO;
+    } else {
+        scrollMenu.managerMenusButton.selected = YES;
+        [scrollMenu.managerMenusButton setImage:[UIImage imageNamed:@"managerMenuButtonSelected"] forState:UIControlStateSelected];
+    }
 }
 
 - (void)menuSelectedIndex:(NSUInteger)index {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		869DC2D31BCE2D9E0081BD97 /* managerMenuButton_unSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 869DC2CF1BCE2D9E0081BD97 /* managerMenuButton_unSelected@2x.png */; };
 		AB509D4518CBF65E00713EEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB509D4418CBF65E00713EEF /* Foundation.framework */; };
 		AB509D4718CBF65E00713EEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB509D4618CBF65E00713EEF /* CoreGraphics.framework */; };
 		AB509D4918CBF65E00713EEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB509D4818CBF65E00713EEF /* UIKit.framework */; };
@@ -25,7 +26,6 @@
 		AB509D8518CBF80000713EEF /* XHMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = AB509D8418CBF80000713EEF /* XHMenu.m */; };
 		AB509D8818CBF82900713EEF /* UIScrollView+XHVisibleCenterScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = AB509D8718CBF82900713EEF /* UIScrollView+XHVisibleCenterScroll.m */; };
 		AB509D8D18CBFC3700713EEF /* leftShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB509D8A18CBFC3700713EEF /* leftShadow@2x.png */; };
-		AB509D8E18CBFC3700713EEF /* managerMenuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB509D8B18CBFC3700713EEF /* managerMenuButton@2x.png */; };
 		AB509D8F18CBFC3700713EEF /* rightShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB509D8C18CBFC3700713EEF /* rightShadow@2x.png */; };
 		ABEB09A018CD149600254A71 /* XHMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEB099F18CD149600254A71 /* XHMenuButton.m */; };
 /* End PBXBuildFile section */
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		869DC2CF1BCE2D9E0081BD97 /* managerMenuButton_unSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "managerMenuButton_unSelected@2x.png"; sourceTree = "<group>"; };
 		AB509D4118CBF65E00713EEF /* XHScrollMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHScrollMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB509D4418CBF65E00713EEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB509D4618CBF65E00713EEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,7 +69,6 @@
 		AB509D8618CBF82900713EEF /* UIScrollView+XHVisibleCenterScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XHVisibleCenterScroll.h"; sourceTree = "<group>"; };
 		AB509D8718CBF82900713EEF /* UIScrollView+XHVisibleCenterScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XHVisibleCenterScroll.m"; sourceTree = "<group>"; };
 		AB509D8A18CBFC3700713EEF /* leftShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftShadow@2x.png"; sourceTree = "<group>"; };
-		AB509D8B18CBFC3700713EEF /* managerMenuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "managerMenuButton@2x.png"; sourceTree = "<group>"; };
 		AB509D8C18CBFC3700713EEF /* rightShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rightShadow@2x.png"; sourceTree = "<group>"; };
 		ABEB099E18CD149600254A71 /* XHMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHMenuButton.h; sourceTree = "<group>"; };
 		ABEB099F18CD149600254A71 /* XHMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHMenuButton.m; sourceTree = "<group>"; };
@@ -193,8 +193,8 @@
 		AB509D8918CBFC3700713EEF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				869DC2CF1BCE2D9E0081BD97 /* managerMenuButton_unSelected@2x.png */,
 				AB509D8A18CBFC3700713EEF /* leftShadow@2x.png */,
-				AB509D8B18CBFC3700713EEF /* managerMenuButton@2x.png */,
 				AB509D8C18CBFC3700713EEF /* rightShadow@2x.png */,
 			);
 			path = Resources;
@@ -276,8 +276,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				869DC2D31BCE2D9E0081BD97 /* managerMenuButton_unSelected@2x.png in Resources */,
 				AB509D8D18CBFC3700713EEF /* leftShadow@2x.png in Resources */,
-				AB509D8E18CBFC3700713EEF /* managerMenuButton@2x.png in Resources */,
 				AB509D6018CBF65F00713EEF /* Images.xcassets in Resources */,
 				AB509D4F18CBF65E00713EEF /* InfoPlist.strings in Resources */,
 				AB509D8F18CBFC3700713EEF /* rightShadow@2x.png in Resources */,
