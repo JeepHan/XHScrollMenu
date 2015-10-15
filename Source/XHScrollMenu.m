@@ -132,7 +132,7 @@
 }
 
 - (UIButton *)getButtonWithMenu:(XHMenu *)menu {
-    CGSize buttonSize = [menu.title sizeWithFont:menu.titleFont constrainedToSize:CGSizeMake(MAXFLOAT, CGRectGetHeight(self.bounds) - 10) lineBreakMode:NSLineBreakByCharWrapping];
+    CGSize buttonSize = [menu.title sizeWithFont:menu.titleHighlightedFont constrainedToSize:CGSizeMake(MAXFLOAT, CGRectGetHeight(self.bounds) - 10) lineBreakMode:NSLineBreakByCharWrapping];
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, buttonSize.width, CGRectGetHeight(self.bounds))];
     button.titleLabel.textAlignment = UITextAlignmentCenter;
     button.titleLabel.font = menu.titleFont;
@@ -176,15 +176,19 @@
 - (void)setSelectedIndex:(NSUInteger)selectedIndex animated:(BOOL)aniamted calledDelegate:(BOOL)calledDelgate {
     if (_selectedIndex == selectedIndex)
         return;
+    
+    NSInteger prousSelectedIndex = _selectedIndex;
+    
     UIButton *towardsButton = [self.menuButtons objectAtIndex:selectedIndex];
     towardsButton.selected = YES;
     
     UIButton *prousButton = [self.menuButtons objectAtIndex:_selectedIndex];
     prousButton.selected = (_selectedIndex == selectedIndex && !selectedIndex);
-   
     _selectedIndex = selectedIndex;
     UIButton *selectedMenuButton = [self menuButtonAtIndex:_selectedIndex];
     [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        prousButton.titleLabel.font = ((XHMenu *)self.menus[prousSelectedIndex]).titleFont;
+        towardsButton.titleLabel.font = ((XHMenu *)self.menus[selectedIndex]).titleHighlightedFont;
         [self.scrollView scrollRectToVisibleCenteredOn:selectedMenuButton.frame animated:NO];
     } completion:^(BOOL finished) {
         [self setupIndicatorFrame:selectedMenuButton.frame animated:aniamted callDelegate:calledDelgate];

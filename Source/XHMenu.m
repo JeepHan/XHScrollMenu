@@ -10,4 +10,9 @@
 
 @implementation XHMenu
 
+- (UIFont *)titleHighlightedFont
+{
+    return _titleHighlightedFont ? _titleHighlightedFont : _titleFont;
+}
+
 @end

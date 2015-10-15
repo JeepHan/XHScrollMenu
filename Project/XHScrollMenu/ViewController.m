@@ -117,7 +117,8 @@
         
         menu.titleNormalColor = [UIColor colorWithWhite:0.141 alpha:1.000];
         menu.titleSelectedColor = [UIColor redColor];
-        menu.titleFont = [UIFont boldSystemFontOfSize:16];
+        menu.titleFont = [UIFont systemFontOfSize:12];
+        menu.titleHighlightedFont = [UIFont boldSystemFontOfSize:18];
         [self.menus addObject:menu];
         
         UIImageView *logoImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo"]];
