@@ -96,7 +96,7 @@
         _managerMenusButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds) - height, 0, height, height)];
         _managerMenusButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
         _managerMenusButton.backgroundColor = self.backgroundColor;
-        [_managerMenusButton setImage:[UIImage imageNamed:@"managerMenuButton_unSelected@2x"] forState:UIControlStateNormal];
+        [_managerMenusButton setImage:[UIImage imageNamed:@"managerMenuButton_unSelected"] forState:UIControlStateNormal];
         [_managerMenusButton addTarget:self action:@selector(managerMenusButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.managerMenusButton];
     }
@@ -230,7 +230,12 @@
     // 重新布局UI
     for (XHMenu *menu in self.menus) {
         NSUInteger index = [self.menus indexOfObject:menu];
-        UIButton *menuButton = [self getButtonWithMenu:menu];
+        UIButton *menuButton = [self getButtonWithMenu:menu];\
+        
+        if (self.selectedIndex == index) {
+            menuButton.titleLabel.font = menu.titleHighlightedFont;
+        }
+    
         menuButton.tag = kXHMenuButtonBaseTag + index;
         CGRect menuButtonFrame = menuButton.frame;
         CGFloat buttonX = 0;

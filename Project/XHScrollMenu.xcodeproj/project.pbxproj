@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86958BDF1BD4A4EC00EA7791 /* managerMenuButton_unSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86958BDE1BD4A4EC00EA7791 /* managerMenuButton_unSelected@3x.png */; };
 		869DC2D31BCE2D9E0081BD97 /* managerMenuButton_unSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 869DC2CF1BCE2D9E0081BD97 /* managerMenuButton_unSelected@2x.png */; };
 		AB509D4518CBF65E00713EEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB509D4418CBF65E00713EEF /* Foundation.framework */; };
 		AB509D4718CBF65E00713EEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB509D4618CBF65E00713EEF /* CoreGraphics.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		86958BDE1BD4A4EC00EA7791 /* managerMenuButton_unSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "managerMenuButton_unSelected@3x.png"; sourceTree = "<group>"; };
 		869DC2CF1BCE2D9E0081BD97 /* managerMenuButton_unSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "managerMenuButton_unSelected@2x.png"; sourceTree = "<group>"; };
 		AB509D4118CBF65E00713EEF /* XHScrollMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHScrollMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB509D4418CBF65E00713EEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -193,6 +195,7 @@
 		AB509D8918CBFC3700713EEF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				86958BDE1BD4A4EC00EA7791 /* managerMenuButton_unSelected@3x.png */,
 				869DC2CF1BCE2D9E0081BD97 /* managerMenuButton_unSelected@2x.png */,
 				AB509D8A18CBFC3700713EEF /* leftShadow@2x.png */,
 				AB509D8C18CBFC3700713EEF /* rightShadow@2x.png */,
@@ -278,6 +281,7 @@
 			files = (
 				869DC2D31BCE2D9E0081BD97 /* managerMenuButton_unSelected@2x.png in Resources */,
 				AB509D8D18CBFC3700713EEF /* leftShadow@2x.png in Resources */,
+				86958BDF1BD4A4EC00EA7791 /* managerMenuButton_unSelected@3x.png in Resources */,
 				AB509D6018CBF65F00713EEF /* Images.xcassets in Resources */,
 				AB509D4F18CBF65E00713EEF /* InfoPlist.strings in Resources */,
 				AB509D8F18CBFC3700713EEF /* rightShadow@2x.png in Resources */,
