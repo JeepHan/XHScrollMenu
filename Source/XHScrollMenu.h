@@ -51,6 +51,8 @@
 
 @property (nonatomic, strong) UIButton *managerMenusButton;
 
+@property (nonatomic, strong) UIImage *normalImageForManagerMenusButton;
+
 
 - (void)setSelectedIndex:(NSUInteger)selectedIndex animated:(BOOL)aniamted calledDelegate:(BOOL)calledDelgate;
 

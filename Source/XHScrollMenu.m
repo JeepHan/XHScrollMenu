@@ -230,7 +230,7 @@
     // 重新布局UI
     for (XHMenu *menu in self.menus) {
         NSUInteger index = [self.menus indexOfObject:menu];
-        UIButton *menuButton = [self getButtonWithMenu:menu];\
+        UIButton *menuButton = [self getButtonWithMenu:menu];
         
         if (self.selectedIndex == index) {
             menuButton.titleLabel.font = menu.titleHighlightedFont;
@@ -282,7 +282,9 @@
         }
     }
     [self.scrollView setContentSize:CGSizeMake(contentSizeWidht, CGRectGetHeight(self.scrollView.frame))];
-    
+    if (self.normalImageForManagerMenusButton) {
+        [self.managerMenusButton setImage:_normalImageForManagerMenusButton forState:UIControlStateNormal];
+    }
     [self setSelectedIndex:self.selectedIndex animated:NO calledDelegate:YES];
 }
 

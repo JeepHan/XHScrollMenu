@@ -66,6 +66,7 @@
     _scrollMenu.shouldUniformizeMenus = YES;
     _scrollMenu.hasManagerButton = YES;
     _scrollMenu.delegate = self;
+//    _scrollMenu.normalImageForManagerMenusButton = [UIImage imageNamed:@"normalImageForManageButton"];
     //    _scrollMenu.selectedIndex = 3;
     [self.view addSubview:self.scrollMenu];
     
