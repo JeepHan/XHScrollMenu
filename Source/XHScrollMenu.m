@@ -107,8 +107,10 @@
     _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.delegate = self;
     
-    _indicatorView = [XHIndicatorView initIndicatorView];
-    _indicatorView.alpha = 0.;
+    if (!_indicatorView) {
+        _indicatorView = [XHIndicatorView initIndicatorView];
+    }
+    
     if (self.indicatorTintColor) {
         _indicatorView.backgroundColor = self.indicatorTintColor;
     }
@@ -277,7 +279,6 @@
         if (self.selectedIndex == index) {
             menuButton.selected = YES;
             // indicator
-            _indicatorView.alpha = 1.;
             [self setupIndicatorFrame:menuButtonFrame animated:NO callDelegate:NO];
         }
     }
