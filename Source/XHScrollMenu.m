@@ -73,7 +73,6 @@
 
 - (void)setup {
     self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    _selectedIndex = 0;
     
     CGRect rightShadowViewFrame = CGRectZero;
     if (self.hasShadowForBoth) {
@@ -134,7 +133,7 @@
 - (UIButton *)getButtonWithMenu:(XHMenu *)menu {
     CGSize buttonSize = [menu.title sizeWithFont:menu.titleHighlightedFont constrainedToSize:CGSizeMake(MAXFLOAT, CGRectGetHeight(self.bounds) - 10) lineBreakMode:NSLineBreakByCharWrapping];
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, buttonSize.width, CGRectGetHeight(self.bounds))];
-    button.titleLabel.textAlignment = UITextAlignmentCenter;
+    button.titleLabel.textAlignment = NSTextAlignmentCenter;
     button.titleLabel.font = menu.titleFont;
     [button setTitle:menu.title forState:UIControlStateNormal];
     if (menu.titleNormalColor)
@@ -152,6 +151,7 @@
     if (self) {
         // Initialization code
         self.hasShadowForBoth = YES;
+        self.selectedIndex = 0;
     }
     return self;
 }
