@@ -6,13 +6,13 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "箭头2.png"
+      "filename" : "managerMenuButtonSelected@2x.png",
+      "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "箭头23x.png"
+      "filename" : "managerMenuButtonSelected@3x.png",
+      "scale" : "3x"
     }
   ],
   "info" : {
